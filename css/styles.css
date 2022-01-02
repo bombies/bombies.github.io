@@ -11718,6 +11718,14 @@ header.masthead {
     background-attachment: scroll;
     background-size: cover;
 }
+
+body.testingbody {
+    background-image: linear-gradient(black 20%, green);
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 header.masthead .masthead-content {
     z-index: 1;
     position: relative;
