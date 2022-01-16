@@ -2081,22 +2081,101 @@ progress {
         --bs-gutter-y: 3rem;
     }
 }
-.table {
-    --bs-table-bg: transparent;
-    --bs-table-accent-bg: transparent;
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 15px 0
+}
+
+table thead th {
+	background-color: #12bb12
+}
+
+table th,
+table td {
+	padding: 5px 8px;
+	text-align: left;
+	background-color: #c3ffb4;
+	position: relative
+}
+
+table thead th:hover {
+	background-color: rgb(26, 221, 0);
+	cursor: pointer
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+table tbody td {
+	font-size: 90%
+}
+
+table tr:nth-child(odd) td {
+	background-color: #d4ffca
+}
+
+table thead th.sort::after {
+	content: "\2039";
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%) rotate(-90deg);
+	color: #fff
+}
+
+table thead th.desc::after {
+	content: "\203A"
+}
+
+#commands {
+	padding-top: 150px;
+	padding-bottom: 30px
+}
+
+select,
+input,
+textarea {
+	background-color: #1a1d1f;
+	border: 0 #666 solid;
+	padding: 5px;
+	font: inherit;
+	color: #fff;
+	margin: 0;
+	line-height: 30px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: top
+}
+
+::placeholder {
+	color: #ccc
+}
+
+/* .table {
+    --bs-table-bg: #d7ffd3;
+    --bs-table-accent-bg: #eaffe3;
     --bs-table-striped-color: #212529;
     --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
     --bs-table-active-color: #212529;
     --bs-table-active-bg: rgba(0, 0, 0, 0.1);
     --bs-table-hover-color: #212529;
     --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
-    width: 100%;
+    width: 75%;
     margin-bottom: 1rem;
-    color: #212529;
+    color: #000000;
     vertical-align: top;
-    border-color: #dee2e6;
+    border-color: #000000;
+} */
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
-.table > :not(caption) > * > * {
+
+/* .table > :not(caption) > * > * {
     padding: 0.5rem 0.5rem;
     background-color: var(--bs-table-bg);
     border-bottom-width: 1px;
@@ -2110,7 +2189,7 @@ progress {
 }
 .table > :not(:first-child) {
     border-top: 2px solid currentColor;
-}
+} */
 
 .caption-top {
     caption-side: top;
@@ -11810,6 +11889,10 @@ header.masthead .masthead-content .masthead-subheading {
     font-size: 2rem;
 }
 
+header.masthead .masthead-content .masthead-subsubheading {
+    font-size: 1rem;
+}
+
 @media (min-width: 992px) {
     header.masthead {
         padding-top: calc(10rem + 55px);
@@ -11820,6 +11903,9 @@ header.masthead .masthead-content .masthead-subheading {
     }
     header.masthead .masthead-content .masthead-subheading {
         font-size: 4rem;
+    }
+    header.masthead .masthead-content .masthead-subsubheading {
+        font-size: 2rem;
     }
 }
 

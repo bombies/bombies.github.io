@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="Robertify's official website" />
+        <meta name="author" content="bombies" />
+        <title>Robertify - A Feature Packed Discord Bot</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script
+            src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Google fonts-->
+        <link
+            href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+            rel="stylesheet"
+        />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav
+            class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top"
+        >
+            <div class="container px-5">
+                <a class="navbar-brand" href="#page-top">Robertify</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home Page</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#management">Management Commands</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#music">Music Commands</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#misc">Miscellaneous Commands</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#utlility">Utility Commands</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">Commands</h1>
+                    <h2 class="masthead-subsubheading mb-0">
+                        So.. many.. commands..
+                    </h2>
+                </div>
+            </div>
+        </header>
+        <!-- Content section 1-->
+        <section id="management">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="mbr-white col-md-12">
+                        <br>
+                        <h2 class="text-center">Management Commands</h2>
+                        <table class="table center">
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                    <th>Usages</th>
+                                    <th>Aliases</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>permissions</td>
+                                    <td>Manage bot permissions for roles</td>
+                                    <td>
+                                        permissions add [@role] [permission]<br>
+                                        permissions adduser(au) [@user] [permission]<br>
+                                        permissions remove [@role] [permission]<br>
+                                        permissions removeuser(ru) [@user] [permission]<br>
+                                        permissions list [permission]
+                                    </td>
+                                    <td>perm, perms, permission</td>
+                                </tr>
+                                <tr>
+                                    <td>setchannel</td>
+                                    <td>Set the announcement channel for when a new song is being played</td>
+                                    <td>setchannel [#channel]</td>
+                                    <td>sc</td>
+                                </tr>
+                                <tr>
+                                    <td>setprefix</td>
+                                    <td>Sets the bot's prefix</td>
+                                    <td>setprefix [prefix]</td>
+                                    <td>sp</td>
+                                </tr>
+                                <tr>
+                                    <td>setdj</td>
+                                    <td>Set a specific role or user to be a DJ</td>
+                                    <td>setdj [@role|@user]</td>
+                                    <td>sdj</td>
+                                </tr>
+                                <tr>
+                                    <td>removedj</td>
+                                    <td>Remove a specific role or user as a DJ</td>
+                                    <td>removedj [@role|@user]</td>
+                                    <td>rdj</td>
+                                </tr>
+                                <tr>
+                                    <td>listdj</td>
+                                    <td>Remove a specific role or user as a DJ</td>
+                                    <td>setdj [@role|@user]</td>
+                                    <td>rdj</td>
+                                </tr>
+                                <tr>
+                                    <td>toggles</td>
+                                    <td>Toggle specific features on or off</td>
+                                    <td>
+                                        toggles<br>
+                                        toggles [toggle_name]<br>
+                                        toggles dj [list|command]<br>
+                                    </td>
+                                    <td>t, tog, toggle</td>
+                                </tr>
+                                <tr>
+                                    <td>ban</td>
+                                    <td>Ban a user from the bot</td>
+                                    <td>ban [@user]</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>unban</td>
+                                    <td>Unban a user from the bot</td>
+                                    <td>unban [@user]</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>setup</td>
+                                    <td>Running this command will build a channel in which you can easily control<br>
+                                         the bot and queue songs. When this channel is created, if you want it removed<br>
+                                          all you have to do is right click on it and delete it. Once the channel is created<br>
+                                           you can find it at the top of your channel list. Happy listening!</td>
+                                    <td>setup</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>restrictedchannels</td>
+                                    <td>Restrict the bot to join voice/text channels that you set</td>
+                                    <td>
+                                        restrictedchannels add [channelID]<br>
+                                        restrictedchannels remove [channelID]<br>
+                                        restrictedchannels list<br>
+                                    </td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>themes</td>
+                                    <td>Tired of seeing our boring old green theme? Well, using this command you can<br>
+                                        have 8 other colours to choose from! It's as easy as selecting the colour you<br>
+                                        want from the selection menu provided.</td>
+                                    <td>themes</td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 2-->
+        <br><br>
+        <section id="music">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="mbr-white col-md-12">
+                        <h2 class="text-center">Music Commands</h2>
+                        <table class="table center">
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                    <th>Usages</th>
+                                    <th>Aliases</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>play</td>
+                                    <td>Plays a song. Accepts links from Spotify, Deezer, YouTube, SoundCloud<br>
+                                    Twitch, Vimeo, Beam, HTTP Audio files and local audio files.</td>
+                                    <td>
+                                        play [song]<br>
+                                        play file
+                                    </td>
+                                    <td>p, rob</td>
+                                </tr>
+                                <tr>
+                                    <td>shuffleplay</td>
+                                    <td>Looking to play a playlist but shuffled right off the bat? This command does that for you.</td>
+                                    <td>shuffleplay [playlist_link]</td>
+                                    <td>splay, spl</td>
+                                </tr>
+                                <tr>
+                                    <td>disconnect</td>
+                                    <td>Forces the bot to stop playing music and leave the voice channel if already in one.</td>
+                                    <td>disconnect</td>
+                                    <td>dc, leave</td>
+                                </tr>
+                                <tr>
+                                    <td>stop</td>
+                                    <td>Forces the bot to stop playing music and clear the queue if already playing music.</td>
+                                    <td>stop</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>skip</td>
+                                    <td>Skips a track</td>
+                                    <td>skip</td>
+                                    <td>next</td>
+                                </tr>
+                                <tr>
+                                    <td>nowplaying</td>
+                                    <td>Displays the song that is currently playing</td>
+                                    <td>nowplaying</td>
+                                    <td>np</td>
+                                </tr>
+                                <tr>
+                                    <td>queue</td>
+                                    <td>Shows all the queued songs</td>
+                                    <td>queue</td>
+                                    <td>q</td>
+                                </tr>
+                                <tr>
+                                    <td>pause</td>
+                                    <td>Pauses the song currently playing</td>
+                                    <td>pause</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>remove</td>
+                                    <td>Remove a specific song from the queue</td>
+                                    <td>remove [songID]</td>
+                                    <td>robbery</td>
+                                </tr>
+                                <tr>
+                                    <td>move</td>
+                                    <td>Move a specific track to a specific position in the queue</td>
+                                    <td>move [songID] [newPosition]</td>
+                                    <td>m</td>
+                                </tr>
+                                <tr>
+                                    <td>shuffle</td>
+                                    <td>Shuffle the current queue</td>
+                                    <td>move [songID] [newPosition]</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>clear</td>
+                                    <td>Clear all the queued songs</td>
+                                    <td>clear</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>rewind</td>
+                                    <td>Rewind the song</td>
+                                    <td>
+                                        rewind<br>
+                                        rewind [seconds]
+                                    </td>
+                                    <td>r, rep, repeat, replay</td>
+                                </tr>
+                                <tr>
+                                    <td>skipto</td>
+                                    <td>Skip to a specific song in the queue</td>
+                                    <td>skipto [songID]</td>
+                                    <td>st</td>
+                                </tr>
+                                <tr>
+                                    <td>loop</td>
+                                    <td>Set the song being currently played or the queue to constantly loop</td>
+                                    <td>
+                                        loop (Current song)<br>
+                                        loop queue (Entire queue)<br>
+                                    </td>
+                                    <td>l</td>
+                                </tr>
+                                <tr>
+                                    <td>jump</td>
+                                    <td>Skips the song by the given number of seconds</td>
+                                    <td>jump [seconds]</td>
+                                    <td>j, ff, fastforward</td>
+                                </tr>
+                                <tr>
+                                    <td>resume</td>
+                                    <td>Resumes the currently playing song if paused</td>
+                                    <td>resume [seconds]</td>
+                                    <td>res</td>
+                                </tr>
+                                <tr>
+                                    <td>seek</td>
+                                    <td>Jump to a specific position in the current song</td>
+                                    <td>seek [mm:ss]</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>previous</td>
+                                    <td>Go back to he track that was played previously</td>
+                                    <td>previous</td>
+                                    <td>prev</td>
+                                </tr>
+                                <tr>
+                                    <td>volume</td>
+                                    <td>Control the volume of the bot</td>
+                                    <td>volume [0-100]</td>
+                                    <td>v, vol</td>
+                                </tr>
+                                <tr>
+                                    <td>join</td>
+                                    <td>Use this command to forcefully move the bot into your voice channel</td>
+                                    <td>join</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>lofi</td>
+                                    <td>
+                                        Looking for some music to study or relax to? Use this command!
+                                        <br><br>
+                                        Upon execution, the bot will clear the current queue and<br>
+                                         indefinitely play Lo-Fi songs for you.
+                                        <br><br>
+                                        If you wish to stop this you can always run the stop command<br>
+                                        or disconnect the bot through whatever means. You can also run<br>
+                                        this command again.
+                                    </td>
+                                    <td>lofi</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>lyrics</td>
+                                    <td>Get the lyrics for the song being played, or searched for</td>
+                                    <td>
+                                        lyrics<br>
+                                        lyrics [songName]
+                                    </td>
+                                    <td>lyr</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 3-->
+        <br><br>
+        <section id="misc">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="mbr-white col-md-12">
+                        <h2 class="text-center">Miscellaneous Commands</h2>
+                        <table class="table center">
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                    <th>Usages</th>
+                                    <th>Aliases</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ping</td>
+                                    <td>Shows the bot's ping to discord's servers.</td>
+                                    <td>ping</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>8ball</td>
+                                    <td>Want to determine your fate? Take a chance with the 8ball!</td>
+                                    <td>
+                                        8ball [question]<br>
+                                        8ball add [response]<br>
+                                        8ball remove [responseID]<br>
+                                        8ball list<br>
+                                        8ball clear<br>
+                                    </td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>poll</td>
+                                    <td>Want to ask your community members a question?<br>
+                                        This is the right tool for you. You are able to<br>
+                                        poll up to 9 choices with an optional time period.</td>
+                                    <td>
+                                        poll [question] "[choice]" "[choice]" ...<br>
+                                        poll [question] "[choice]" "[choice]" ... [num][s|m|h|d]<br><br>
+                                        <b>Example: </b> <code>poll Best poll ever? "Yes" "Yes again" 15s</code> <i>(15 second poll)</i>
+                                    </td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 4-->
+        <br><br>
+        <section id="utility">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="mbr-white col-md-12">
+                        <h2 class="text-center">Utility Commands</h2>
+                        <table class="table center">
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                    <th>Usages</th>
+                                    <th>Aliases</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tutorial</td>
+                                    <td>No clue how to use the bot? Run this command!<br>
+                                    It shows you all that you may need to know.</td>
+                                    <td>tutorial</td>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <td>help</td>
+                                    <td>Shows the help menu</td>
+                                    <td>help</td>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <td>suggest</td>
+                                    <td>Want to see something added to Robertify? Suggest it using this command!</td>
+                                    <td>suggest [suggestion]</td>
+                                    <td>sg, sug</td>
+                                </tr>
+                                <tr>
+                                    <td>report</td>
+                                    <td>Found a bug? Report it using this command! Please ensure that your private<br>
+                                        messages are enabled for starting the bug report process and for receiving<br>
+                                        a response.</td>
+                                    <td>report</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>botinfo</td>
+                                    <td>Looking for information on the bot? This is the place to find it</td>
+                                    <td>botinfo</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>uptime</td>
+                                    <td>See how long the bot has been online</td>
+                                    <td>uptime</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>support</td>
+                                    <td>Need additional help? Use this command to join our support server!</td>
+                                    <td>support</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>donate</td>
+                                    <td>Want to help keep Robertify online? Donate using these links!<br>
+                                        1 $10 donation is equivalent to 1 more month Robertify gets to stay online!</td>
+                                    <td>donate</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>vote</td>
+                                    <td>Do you like Robertify and want to help us share it with more users?<br>
+                                        Do us the favour of voting for us! It would really help us in growing<br>
+                                        our reach. 💖</td>
+                                    <td>vote</td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5">
+                <p class="m-0 text-center text-white small">
+                    Copyright &copy; Robertify 2022
+                </p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
