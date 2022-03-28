@@ -70,7 +70,6 @@
                                     <th>Command</th>
                                     <th>Description</th>
                                     <th>Usages</th>
-                                    <th>Aliases</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -84,37 +83,31 @@
                                         permissions removeuser(ru) [@user] [permission]<br>
                                         permissions list [permission]
                                     </td>
-                                    <td>perm, perms, permission</td>
                                 </tr>
                                 <tr>
                                     <td>setchannel</td>
                                     <td>Set the announcement channel for when a new song is being played</td>
                                     <td>setchannel [#channel]</td>
-                                    <td>sc</td>
                                 </tr>
                                 <tr>
                                     <td>setprefix</td>
                                     <td>Sets the bot's prefix</td>
                                     <td>setprefix [prefix]</td>
-                                    <td>sp</td>
                                 </tr>
                                 <tr>
                                     <td>setdj</td>
                                     <td>Set a specific role or user to be a DJ</td>
                                     <td>setdj [@role|@user]</td>
-                                    <td>sdj</td>
                                 </tr>
                                 <tr>
                                     <td>removedj</td>
                                     <td>Remove a specific role or user as a DJ</td>
                                     <td>removedj [@role|@user]</td>
-                                    <td>rdj</td>
                                 </tr>
                                 <tr>
                                     <td>listdj</td>
                                     <td>Remove a specific role or user as a DJ</td>
                                     <td>setdj [@role|@user]</td>
-                                    <td>rdj</td>
                                 </tr>
                                 <tr>
                                     <td>toggles</td>
@@ -124,19 +117,16 @@
                                         toggles [toggle_name]<br>
                                         toggles dj [list|command]<br>
                                     </td>
-                                    <td>t, tog, toggle</td>
                                 </tr>
                                 <tr>
                                     <td>ban</td>
                                     <td>Ban a user from the bot</td>
                                     <td>ban [@user]</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>unban</td>
                                     <td>Unban a user from the bot</td>
                                     <td>unban [@user]</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>setup</td>
@@ -145,7 +135,6 @@
                                           all you have to do is right click on it and delete it. Once the channel is created<br>
                                            you can find it at the top of your channel list. Happy listening!</td>
                                     <td>setup</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>restrictedchannels</td>
@@ -155,7 +144,6 @@
                                         restrictedchannels remove [channelID]<br>
                                         restrictedchannels list<br>
                                     </td>
-                                    <td>rc, rchannels</td>
                                 </tr>
                                 <tr>
                                     <td>themes</td>
@@ -163,13 +151,11 @@
                                         have 8 other colours to choose from! It's as easy as selecting the colour you<br>
                                         want from the selection menu provided.</td>
                                     <td>themes</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>247</td>
                                     <td>Toggle whether or not the bot stays in a voice channel 24/7</td>
                                     <td>247</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>setuplogs</td>
@@ -179,7 +165,11 @@
                                         caused the update. If you would like to remove this channel all you have to do is right click<br>
                                         it and press delete.</td>
                                     <td>setuplogs</td>
-                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>setlogchannel</td>
+                                    <td>Run this command to set where logs should be sent!</td>
+                                    <td>setlogchannel</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -200,7 +190,6 @@
                                     <th>Command</th>
                                     <th>Description</th>
                                     <th>Usages</th>
-                                    <th>Aliases</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -213,73 +202,61 @@
                                         play [song] -next<br>
                                         play file
                                     </td>
-                                    <td>p, rob</td>
                                 </tr>
                                 <tr>
                                     <td>shuffleplay</td>
                                     <td>Looking to play a playlist but shuffled right off the bat? This command does that for you.</td>
                                     <td>shuffleplay [playlist_link]</td>
-                                    <td>splay, spl</td>
                                 </tr>
                                 <tr>
                                     <td>disconnect</td>
                                     <td>Forces the bot to stop playing music and leave the voice channel if already in one.</td>
                                     <td>disconnect</td>
-                                    <td>dc, leave</td>
                                 </tr>
                                 <tr>
                                     <td>stop</td>
                                     <td>Forces the bot to stop playing music and clear the queue if already playing music.</td>
                                     <td>stop</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>skip</td>
                                     <td>Skips a track</td>
                                     <td>skip</td>
-                                    <td>next</td>
                                 </tr>
                                 <tr>
                                     <td>nowplaying</td>
                                     <td>Displays the song that is currently playing</td>
                                     <td>nowplaying</td>
-                                    <td>np</td>
                                 </tr>
                                 <tr>
                                     <td>queue</td>
                                     <td>Shows all the queued songs</td>
                                     <td>queue</td>
-                                    <td>q</td>
                                 </tr>
                                 <tr>
                                     <td>pause</td>
                                     <td>Pauses the song currently playing</td>
                                     <td>pause</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>remove</td>
                                     <td>Remove a specific song from the queue</td>
                                     <td>remove [songID]</td>
-                                    <td>robbery</td>
                                 </tr>
                                 <tr>
                                     <td>move</td>
                                     <td>Move a specific track to a specific position in the queue</td>
                                     <td>move [songID] [newPosition]</td>
-                                    <td>m</td>
                                 </tr>
                                 <tr>
                                     <td>shuffle</td>
                                     <td>Shuffle the current queue</td>
                                     <td>move [songID] [newPosition]</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>clear</td>
                                     <td>Clear all the queued songs</td>
                                     <td>clear</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>rewind</td>
@@ -288,13 +265,11 @@
                                         rewind<br>
                                         rewind [seconds]
                                     </td>
-                                    <td>r, rep, repeat, replay</td>
                                 </tr>
                                 <tr>
                                     <td>skipto</td>
                                     <td>Skip to a specific song in the queue</td>
                                     <td>skipto [songID]</td>
-                                    <td>st</td>
                                 </tr>
                                 <tr>
                                     <td>loop</td>
@@ -303,43 +278,36 @@
                                         loop (Current song)<br>
                                         loop queue (Entire queue)<br>
                                     </td>
-                                    <td>l</td>
                                 </tr>
                                 <tr>
                                     <td>jump</td>
                                     <td>Skips the song by the given number of seconds</td>
                                     <td>jump [seconds]</td>
-                                    <td>j, ff, fastforward</td>
                                 </tr>
                                 <tr>
                                     <td>resume</td>
                                     <td>Resumes the currently playing song if paused</td>
                                     <td>resume [seconds]</td>
-                                    <td>res</td>
                                 </tr>
                                 <tr>
                                     <td>seek</td>
                                     <td>Jump to a specific position in the current song</td>
                                     <td>seek [mm:ss]</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>previous</td>
                                     <td>Go back to he track that was played previously</td>
                                     <td>previous</td>
-                                    <td>prev</td>
                                 </tr>
                                 <tr>
                                     <td>volume</td>
                                     <td>Control the volume of the bot</td>
                                     <td>volume [0-100]</td>
-                                    <td>v, vol</td>
                                 </tr>
                                 <tr>
                                     <td>join</td>
                                     <td>Use this command to forcefully move the bot into your voice channel</td>
                                     <td>join</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>lofi</td>
@@ -354,7 +322,6 @@
                                         this command again.
                                     </td>
                                     <td>lofi</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>lyrics</td>
@@ -363,7 +330,6 @@
                                         lyrics<br>
                                         lyrics [songName]
                                     </td>
-                                    <td>lyr</td>
                                 </tr>
                                 <tr>
                                     <td>favouritetracks</td>
@@ -375,37 +341,31 @@
                                         favouritetracks remove [id]<br>
                                         favouritetracks
                                     </td>
-                                    <td>favs, fav, favoritetracks, favtracks</td>
                                 </tr>
                                 <tr>
                                     <td>karaoke</td>
                                     <td>Toggle the Karaoke filter on/off</td>
                                     <td>karaoke</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>nightcore</td>
                                     <td>Toggle the Nightcore filter on/off</td>
                                     <td>nightcore</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>8d</td>
                                     <td>Toggle the 8D filter on/off</td>
                                     <td>8d</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>tremolo</td>
                                     <td>Toggle the Tremolo filter on/off</td>
                                     <td>tremolo</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>vibrato</td>
                                     <td>Toggle the Vibrato filter on/off</td>
                                     <td>vibrato</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>search</td>
@@ -414,7 +374,6 @@
                                         It's as easy as selecting one of them from the selection menu<br>
                                         and it'll be added to the queue!</td>
                                     <td>search [query]</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>autoplay</td>
@@ -422,7 +381,11 @@
                                         last one at the end of the queue. Running this command will toggle<br>
                                         autoplay either on or off.</td>
                                     <td>autoplay</td>
-                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>resume</td>
+                                    <td>Resumes the currently playing song if paused</td>
+                                    <td>resume</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -443,7 +406,6 @@
                                     <th>Command</th>
                                     <th>Description</th>
                                     <th>Usages</th>
-                                    <th>Aliases</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -451,7 +413,6 @@
                                     <td>ping</td>
                                     <td>Shows the bot's ping to discord's servers.</td>
                                     <td>ping</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>8ball</td>
@@ -463,7 +424,6 @@
                                         8ball list<br>
                                         8ball clear<br>
                                     </td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>poll</td>
@@ -475,13 +435,28 @@
                                         poll [question] "[choice]" "[choice]" ... [num][s|m|h|d]<br><br>
                                         <b>Example: </b> <code>poll Best poll ever? "Yes" "Yes again" 15s</code> <i>(15 second poll)</i>
                                     </td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>playtime</td>
                                     <td>See how long the bot has been playing music in your server</td>
                                     <td>playtime</td>
-                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>reminders</td>
+                                    <td>Get reminded of whatever in either your DMs or in a specifc channel!</td>
+                                    <td><b>General Commands</b><br>
+                                        reminders add [00:00AM/PM|00:00] (#channel) [reminder]<br>
+                                        reminders remove [id]<br>
+                                        reminders clear<br>
+                                        reminders list<br>
+                                        reminders edit channel [ID] (#channel)<br>
+                                        reminders edit time  [ID] <00:00AM/PM|00:00><br><br>
+                                        
+                                        <b>Admin Commands</b><br>
+                                        reminders banchannel [channel]<br>
+                                        reminders unbanchannel [channel]<br>
+                                        reminders banuser [user]<br>
+                                        reminders unbanuser [user]</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -502,7 +477,6 @@
                                     <th>Command</th>
                                     <th>Description</th>
                                     <th>Usages</th>
-                                    <th>Aliases</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -511,19 +485,16 @@
                                     <td>No clue how to use the bot? Run this command!<br>
                                     It shows you all that you may need to know.</td>
                                     <td>tutorial</td>
-                                    <td>none</td>
                                 </tr>
                                 <tr>
                                     <td>help</td>
                                     <td>Shows the help menu</td>
                                     <td>help</td>
-                                    <td>none</td>
                                 </tr>
                                 <tr>
                                     <td>suggest</td>
                                     <td>Want to see something added to Robertify? Suggest it using this command!</td>
                                     <td>suggest [suggestion]</td>
-                                    <td>sg, sug</td>
                                 </tr>
                                 <tr>
                                     <td>report</td>
@@ -531,32 +502,27 @@
                                         messages are enabled for starting the bug report process and for receiving<br>
                                         a response.</td>
                                     <td>report</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>botinfo</td>
                                     <td>Looking for information on the bot? This is the place to find it</td>
                                     <td>botinfo</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>uptime</td>
                                     <td>See how long the bot has been online</td>
                                     <td>uptime</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>support</td>
                                     <td>Need additional help? Use this command to join our support server!</td>
                                     <td>support</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>donate</td>
                                     <td>Want to help keep Robertify online? Donate using these links!<br>
                                         1 $10 donation is equivalent to 1 more month Robertify gets to stay online!</td>
                                     <td>donate</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>vote</td>
@@ -564,13 +530,11 @@
                                         Do us the favour of voting for us! It would really help us in growing<br>
                                         our reach. 💖</td>
                                     <td>vote</td>
-                                    <td>None</td>
                                 </tr>
                                 <tr>
                                     <td>website</td>
                                     <td>Visit our website using this command</td>
                                     <td>website</td>
-                                    <td>None</td>
                                 </tr>
                             </tbody>
                         </table>
